@@ -1,0 +1,14 @@
+<?xml version="1.0" ?><xliff version="1.1">
+  <file datatype="php" original="src/Resources/contao/languages/en/default.php" source-language="en" target-language="de">
+    <body>
+      <trans-unit id="PTY.duplicate.0">
+        <source>Duplicate page</source>
+        <target>Duplikat</target>
+      </trans-unit>
+      <trans-unit id="PTY.duplicate.1">
+        <source>A duplicate page contains articles and content elements of a regarding page.</source>
+        <target>Ein Seiten-Duplikat enthält Artikel und Inhaltselemente einer angegeben Seite.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
