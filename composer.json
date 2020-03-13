@@ -1,0 +1,56 @@
+{
+    "name": "oveleon/contao-page-duplicate-bundle",
+    "type": "contao-bundle",
+    "description": "Adds functionality to create duplicates of an existing pages to Contao",
+    "license": "LGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Fabian Ekert",
+            "homepage": "https://github.com/eki89"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "contao/core-bundle": "^4.4"
+    },
+    "conflict": {
+        "contao/core": "*",
+        "contao/manager-plugin": "<2.0 || >=3.0"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.3.1",
+        "contao/test-case": "^4.0",
+        "phpunit/phpunit": "^8.4",
+        "symfony/http-client": "4.4.*",
+        "symfony/phpunit-bridge": "4.4.*"
+    },
+    "extra": {
+        "contao-manager-plugin": "Oveleon\\ContaoPageDuplicateBundle\\ContaoManager\\Plugin",
+        "symfony": {
+            "require": "^4.4"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Oveleon\\ContaoPageDuplicateBundle\\": "src/"
+        },
+        "classmap": [
+            "src/Resources/contao/"
+        ],
+        "exclude-from-classmap": [
+            "src/Resources/contao/config/",
+            "src/Resources/contao/dca/",
+            "src/Resources/contao/languages/",
+            "src/Resources/contao/templates/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Contao\\ContaoPageDuplicateBundle\\Tests\\": "tests/"
+        }
+    },
+    "support": {
+        "issues": "https://github.com/oveleon/contao-page-duplicate-bundle/issues",
+        "source": "https://github.com/oveleon/contao-page-duplicate-bundle"
+    }
+}
