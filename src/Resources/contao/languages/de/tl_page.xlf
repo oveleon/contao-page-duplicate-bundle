@@ -1,0 +1,18 @@
+<?xml version="1.0" ?><xliff version="1.1">
+  <file datatype="php" original="src/Resources/contao/languages/en/tl_page.php" source-language="en" target-language="de">
+    <body>
+      <trans-unit id="tl_page.jumpToDuplicate.0">
+        <source>Page to be duplicated</source>
+        <target>Zu duplizierende Seite</target>
+      </trans-unit>
+      <trans-unit id="tl_page.jumpToDuplicate.1">
+        <source>Please select the page that should be duplicated.</source>
+        <target>Bitte wählen Sie die Seite aus, die dupliziert werden soll.</target>
+      </trans-unit>
+      <trans-unit id="tl_page.duplicate_legend">
+        <source>Page duplicate</source>
+        <target>Seiten-Duplikat</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -3,11 +3,11 @@
     <body>
       <trans-unit id="PTY.duplicate.0">
         <source>Duplicate page</source>
-        <target>Duplikat</target>
+        <target>Seiten-Duplikat</target>
       </trans-unit>
       <trans-unit id="PTY.duplicate.1">
-        <source>A duplicate page contains articles and content elements of a regarding page.</source>
-        <target>Ein Seiten-Duplikat enthält Artikel und Inhaltselemente einer angegeben Seite.</target>
+        <source>A duplicate page contains articles and content elements of a referenced page.</source>
+        <target>Ein Seiten-Duplikat enthält Artikel und Inhaltselemente einer referenzierten Seite.</target>
       </trans-unit>
     </body>
   </file>

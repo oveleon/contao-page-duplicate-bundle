@@ -6,7 +6,7 @@
         <source>Duplicate page</source>
       </trans-unit>
       <trans-unit id="PTY.duplicate.1">
-        <source>A duplicate page contains articles and content elements of a regarding page.</source>
+        <source>A duplicate page contains articles and content elements of a referenced page.</source>
       </trans-unit>
     </body>
   </file>
