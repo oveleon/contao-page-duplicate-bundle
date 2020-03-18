@@ -1,7 +1,7 @@
 {
     "name": "oveleon/contao-page-duplicate-bundle",
     "type": "contao-bundle",
-    "description": "Adds functionality to create duplicates of an existing pages to Contao",
+    "description": "Adds functionality to create regarding duplicates of existing pages to Contao",
     "license": "LGPL-3.0-or-later",
     "authors": [
         {
@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "php": "^7.2",
+        "php": "^7.1",
         "contao/core-bundle": "^4.4"
     },
     "conflict": {
