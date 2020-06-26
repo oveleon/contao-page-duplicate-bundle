@@ -12,3 +12,6 @@ $GLOBALS['TL_PTY']['duplicate'] = 'Oveleon\\ContaoPageDuplicateBundle\\PageDupli
 // Register hooks
 $GLOBALS['TL_HOOKS']['getSearchablePages'][] = array('Oveleon\\ContaoPageDuplicateBundle\\Page', 'getSearchablePages');
 $GLOBALS['TL_HOOKS']['getPageStatusIcon'][]  = array('Oveleon\\ContaoPageDuplicateBundle\\Page', 'getPageDuplicateStatusIcon');
+
+// Skip page types
+$GLOBALS['TL_COMPANY_ALLOWED_PAGE_TYPES'][] = 'duplicate';
