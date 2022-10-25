@@ -8,12 +8,15 @@
 
 namespace Oveleon\ContaoPageDuplicateBundle;
 
+use Contao\Frontend;
+use Contao\PageModel;
+
 /**
  * Provide methods regarding page duplicates.
  *
  * @author Fabian Ekert <https://github.com/eki89>
  */
-class Page extends \Frontend
+class Page extends Frontend
 {
     /**
      * Add page duplicates to the indexer
@@ -30,7 +33,7 @@ class Page extends \Frontend
         $objPages = $this->findPageDuplicates();
 
         // Walk through each page
-        if ($objPages !== null)
+        if (null !== $objPages)
         {
             while ($objPages->next())
             {
@@ -79,7 +82,7 @@ class Page extends \Frontend
      */
     public function getPageDuplicateStatusIcon($objPage, $image)
     {
-        if ($objPage->type !== 'duplicate')
+        if ('duplicate' !== $objPage->type)
         {
             return $image;
         }
@@ -90,8 +93,8 @@ class Page extends \Frontend
     private function findPageDuplicates()
     {
         $t = 'tl_page';
-        $arrColumns = array("$t.type='duplicate' AND $t.protected='' AND $t.published='1'");
+        $arrColumns = ["$t.type='duplicate' AND $t.protected='' AND $t.published='1'"];
 
-        return \PageModel::findBy($arrColumns, array());
+        return PageModel::findBy($arrColumns, []);
     }
 }

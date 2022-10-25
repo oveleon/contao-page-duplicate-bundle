@@ -10,5 +10,5 @@
 $GLOBALS['TL_PTY']['duplicate'] = 'Oveleon\\ContaoPageDuplicateBundle\\PageDuplicate';
 
 // Register hooks
-$GLOBALS['TL_HOOKS']['getSearchablePages'][] = array('Oveleon\\ContaoPageDuplicateBundle\\Page', 'getSearchablePages');
-$GLOBALS['TL_HOOKS']['getPageStatusIcon'][]  = array('Oveleon\\ContaoPageDuplicateBundle\\Page', 'getPageDuplicateStatusIcon');
+$GLOBALS['TL_HOOKS']['getSearchablePages'][] = ['Oveleon\\ContaoPageDuplicateBundle\\Page', 'getSearchablePages'];
+$GLOBALS['TL_HOOKS']['getPageStatusIcon'][]  = ['Oveleon\\ContaoPageDuplicateBundle\\Page', 'getPageDuplicateStatusIcon'];
