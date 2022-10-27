@@ -10,6 +10,7 @@ namespace Oveleon\ContaoPageDuplicateBundle;
 
 use Contao\Frontend;
 use Contao\PageModel;
+use Database\Result;
 
 /**
  * Provide methods regarding page duplicates.
@@ -75,8 +76,8 @@ class Page extends Frontend
     /**
      * Calculate the page status icon name for duplicate page type
      *
-     * @param \PageModel|\Database\Result|\stdClass $objPage The page object
-     * @param string                                $image   Image file name
+     * @param PageModel|Result|\stdClass $objPage The page object
+     * @param string                     $image   Image file name
      *
      * @return string The status icon path
      */
@@ -87,7 +88,7 @@ class Page extends Frontend
             return $image;
         }
 
-        return 'bundles/contaopageduplicate/' . $image;
+        return 'bundles/contaopageduplicate/' . str_replace('regular', 'duplicate', $image);;
     }
 
     private function findPageDuplicates()
